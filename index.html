@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Зарабатывайте легко с Aviso.bz! Получайте доход, выполняя простые задания.">
+    <title>Зарабатывай с Aviso.bz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 50px;
+            overflow: hidden; /* Чтобы не было прокрутки страницы при анимации */
+            position: relative;
+            height: 100vh; /* Высота страницы 100% экрана */
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            font-size: 18px;
+            color: #555;
+        }
+        a {
+            color: #008CBA;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .banner {
+            margin-top: 20px;
+        }
+        .button {
+            background-color: #008CBA;
+            color: white;
+            padding: 15px 25px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            margin-top: 20px;
+            display: inline-block;
+        }
+        .button:hover {
+            background-color: #005f73;
+        }
+        
+        /* Стиль для падающих купюр */
+        .money {
+            position: absolute;
+            width: 50px;
+            height: auto;
+            animation: fall linear infinite;
+        }
+
+        /* Анимация падения */
+        @keyframes fall {
+            0% {
+                transform: translateY(-100px) rotate(0deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(100vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+        /* Создаем несколько вариаций анимации */
+        .money:nth-child(2) {
+            animation-duration: 7s;
+            left: 10%;
+        }
+        .money:nth-child(3) {
+            animation-duration: 6s;
+            left: 30%;
+        }
+        .money:nth-child(4) {
+            animation-duration: 5s;
+            left: 50%;
+        }
+        .money:nth-child(5) {
+            animation-duration: 8s;
+            left: 70%;
+        }
+        .money:nth-child(6) {
+            animation-duration: 9s;
+            left: 90%;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Зарабатывай легко с Aviso.bz</h1>
+    <p>Присоединяйтесь к платформе Aviso.bz и начните зарабатывать уже сегодня! Выполняйте простые задания и получайте стабильный доход.</p>
+
+    <a href="https://aviso.bz/?r=krovostok" class="button">Начать зарабатывать</a>
+
+    <div class="banner">
+        <a href="https://aviso.bz/?r=krovostok">
+            <img src="https://aviso.bz/statica/pictures/A-468.gif" alt="Зарабатывай с Aviso.bz">
+        </a>
+    </div>
+
+    <!-- Контейнеры для падающих денег -->
+    <img src="https://cdn-icons-png.flaticon.com/512/2327/2327435.png" class="money" style="left: 15%; animation-duration: 4s;">
+    <img src="https://cdn-icons-png.flaticon.com/512/2327/2327435.png" class="money" style="left: 30%; animation-duration: 5s;">
+    <img src="https://cdn-icons-png.flaticon.com/512/2327/2327435.png" class="money" style="left: 45%; animation-duration: 6s;">
+    <img src="https://cdn-icons-png.flaticon.com/512/2327/2327435.png" class="money" style="left: 60%; animation-duration: 7s;">
+    <img src="https://cdn-icons-png.flaticon.com/512/2327/2327435.png" class="money" style="left: 75%; animation-duration: 8s;">
+    <img src="https://cdn-icons-png.flaticon.com/512/2327/2327435.png" class="money" style="left: 90%; animation-duration: 9s;">
+
+</body>
+</html>
